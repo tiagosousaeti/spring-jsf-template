@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.eti.tiagosousa</groupId>
 	<artifactId>template-spring-jsf</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>war</packaging>
 	<name>Template Spring com JavaServer Faces</name>
   
@@ -20,11 +20,14 @@
 		<!-- Java Version -->
 		<java.version>1.8</java.version>
 		
-		<!-- Javax Faces API -->
+		<!-- Javax Faces -->
 		<javax-faces.version>2.2.15</javax-faces.version>
 		
-		<!-- Maven Compiler -->
-		<maven-compiler-pluging.version>3.2</maven-compiler-pluging.version>
+		<!-- Jetty Maven Plugin -->
+		<jetty-maven-plugin.version>9.2.11.v20150529</jetty-maven-plugin.version>
+		
+		<!-- Maven Compiler Plugin -->
+		<maven-compiler-plugin.version>3.2</maven-compiler-plugin.version>
 		
 		<!-- Servlet API -->
 		<servlet.version>3.1.0</servlet.version>
@@ -37,10 +40,22 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven-compiler-pluging.version}</version>
+				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>${jetty-maven-plugin.version}</version>
+				<configuration>
+					<scanIntervalSeconds>5</scanIntervalSeconds>
+					<webApp>
+						<contextPath>/template-spring-jsf</contextPath>
+					</webApp>
 				</configuration>
 			</plugin>
 		</plugins>
