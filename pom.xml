@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.eti.tiagosousa</groupId>
 	<artifactId>template-spring-jsf</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>war</packaging>
 	<name>Template Spring com JavaServer Faces</name>
   
@@ -21,7 +21,7 @@
 		<java.version>1.8</java.version>
 		
 		<!-- Javax Faces API -->
-		<javax-faces-api.version>2.3</javax-faces-api.version>
+		<javax-faces.version>2.2.15</javax-faces.version>
 		
 		<!-- Maven Compiler -->
 		<maven-compiler-pluging.version>3.2</maven-compiler-pluging.version>
@@ -61,12 +61,12 @@
 	</dependencyManagement>
 	
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.glassfish/javax.faces -->
+		<!-- Javax Face -->
 		<dependency>
 		    <groupId>org.glassfish</groupId>
 		    <artifactId>javax.faces</artifactId>
-		    <version>2.3.3</version>
-		</dependency>		
+		    <version>${javax-faces.version}</version>
+		</dependency>
 				
 		<!-- Servlet API -->
 		<dependency>
