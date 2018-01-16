@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.eti.tiagosousa</groupId>
 	<artifactId>template-spring-jsf</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<packaging>war</packaging>
 	<name>Template Spring com JavaServer Faces</name>
   
@@ -54,13 +54,13 @@
 				<configuration>
 					<scanIntervalSeconds>5</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/template-spring-jsf</contextPath>
+						<contextPath>/springjsf</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>
 		</plugins>
 
-		<finalName>template-spring-jsf</finalName>
+		<finalName>springjsf</finalName>
 	</build>
 	
 	<dependencyManagement>
