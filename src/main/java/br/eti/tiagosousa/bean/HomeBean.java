@@ -5,7 +5,7 @@ import javax.faces.bean.ManagedBean;
 @ManagedBean
 public class HomeBean {
 
-	private String titulo = "Spring Thymeleaf Template";
+	private String titulo = "Spring JavaServer Faces Template";
 	
 	public String getTitulo() {
         return titulo;

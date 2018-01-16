@@ -16,5 +16,8 @@ mvn jetty:run
 Acesse:
 http://localhost:8080/template-spring-jsf/
 
+Página home:
+![Home](https://tiagosousa.eti.br/img/springjsf.png)
+
 ### Versão
-1.0.4
+1.0.5
